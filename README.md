@@ -3,17 +3,22 @@ This repository contains the exercises completed for the Web Development assessm
 
 ## Exercises
 
-### 01 Semantic Markup
+- **01 Semantic Markup**
 Practice using semantic HTML elemnts.
+[View Exercise](exercises/01-semantic-markup)
 
-### 02 CSS Styling
+- **02 CSS Styling**
 Applying CSS styling and layout techniques.
+[View Exercise](exercises/02-css-styling)
 
-### 03 Page Layout
+
+- **03 Page Layout**
 Creating a page layout using CSS Grid and media elements.
+[View Exercise](exercises/03-page-layout)
 
-### 04 Web Accessibility
+- **04 Web Accessibility**
 Improving accessibility using semantic structure and ARIA attibutes.
+[View Exercise](exercises/04-web-accessibility)
 
 ## Technologies Used
 HTML5
