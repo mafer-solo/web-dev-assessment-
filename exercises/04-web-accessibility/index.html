@@ -3,7 +3,10 @@
 
 <!-- Head section: contains metadata and links to external files-->
   <head>
+
+    <!-- Character encoding for proper text rendering -->
     <meta charset="UTF-8">
+
     <!-- Makes the page responsive on different screen sizes -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -16,10 +19,13 @@
 
   <body>
 
-    <!-- Main page wrapper that contains the whole webside -->
+    <!-- Skip link for keyboard and screen readers users -->
+     <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Main page wrapper that contains the whole website -->
     <div class="page">
 
-      <!-- Header section contains the decorative divider and shopping basket icon -->
+      <!-- Header section contains the decorative divider, navigation and shopping basket icon -->
       <header class="top-decoration">
 
           <!-- Navigation links -->
@@ -45,7 +51,15 @@
       </header>
 
       <!-- Main content area containing the photo gallery -->
-      <main class="gallery">
+      <main id="main-content" class="gallery">
+
+        <!-- Visible gallery heading -->
+         <h2 class="gallery-title">The Wandering Photographer Gallery</h2>
+
+         <!-- Short introduction description the gallery -->
+          <p class="gallery-intro">
+            Welcome to my photography gallery. These images were capture during my travels around the world and show some of favourite landscapes, natural views and unforgettable moments.
+          </p>
 
         <!-- Photo card 1-->
         <article class="photo-card">
@@ -58,11 +72,16 @@
             <figcaption>
               This was from a fabulous trip to the coast of Greenland with my family. The water was lovely-but very cold!
             </figcaption>
-
           </figure>
 
+          <!-- Price of the photo print-->
+           <p class="photo-price">
+            <span class="visually-hidden">Price:</span> £22.99
+           </p>
+
           <!-- Button to add the photo to basket -->
-          <button type="button">Add to basket</button>
+          <button type="button" aria-label="Add Ocean Photograph to basket">Add to basket
+        </button>
         </article>
 
         <!-- Photo card 2 -->
@@ -73,18 +92,34 @@
             A picture of the Golden Gate Bridge in San Francisco, California!
           </figcaption>
           </figure>
-          <button type="button">Add to basket</button>
+
+          <!-- Price of th photo to print -->
+           <p class="photo-price">
+            <span class="visually-hidden">Price:</span> £18.99
+           </p>
+
+        <!-- Button to add the photo to basket -->
+        <button type="button" aria-label="Add Golden Gate Bridge photograph to basket">Add to basket 
+        </button>
         </article>
 
         <!-- Photo card 3 -->
         <article class="photo-card">
           <figure>
-            <img src="ValleyPhoto.jpg" alt="Wide river valley surronded by mountains">
+            <img src="ValleyPhoto.jpg" alt="Wide river valley surrounded by mountains">
             <figcaption>
               Another great photo from Greenland. It's a river valley where a glacier used to be.
             </figcaption>
           </figure>
-          <button type="button">Add to basket</button>
+
+          <!-- Price of the photo print -->
+           <p class="photo-price">
+            <span class="visually-hidden">Price:</span> £25.99
+           </p>
+
+          <!-- Button to add the photo to basket -->
+          <button type="button" aria-label="Add the ValleyPhoto to basket">Add to basket 
+          </button>
         </article>
 
         <!-- Photo card 4 -->
@@ -95,7 +130,15 @@
               The waterfall made such a lovely sound. I could have fallen sleep!
             </figcaption>
           </figure>
-          <button type="button">Add to basket</button>
+
+          <!-- Price of the photo print -->
+           <p class="photo-price">
+            <span class="visually-hidden">Price:</span> £19.99
+           </p>
+
+           <!-- Button to add the photo to basket -->
+          <button type="button" ariel-label="Add the WaterfallPhoto to basket">Add to basket 
+          </button>
         </article>
 
       </main>

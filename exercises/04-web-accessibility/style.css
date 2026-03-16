@@ -14,7 +14,7 @@ body {
 /* Page container */
 /* Centers the whole page content*/
 .page-container {
-  width: 320px;
+  width: 650px;
   margin: 0 auto;
   padding: 20px 0;
 }
@@ -33,6 +33,7 @@ body {
 }
 
 /* Skip link */
+/* Allows keyboard users to jump strainght to the main content */
 .skip-link {
   position: absolute;
   left: -9999px;
@@ -62,21 +63,22 @@ body {
   justify-content: center;
   gap: 50px;
   padding: 0;
-  margin: 40 20 20px;
+  margin: 0 0 20px 0;
 }
 
+/* Navigation link */
 .main.nav a {
-  color: #ffffff;
-  font-size: 40px;
+  color: #000;
+  font-size: 22px;
   font-weight: bold;
   text-decoration: none;
 }
 
+/* Navigation hoover and focus styles */
 .main.nav a:hover,
 .main.nav a focus {
   text-decoration: underline;
 }
-
 
 /* Decorative divider image at the top of the page */
 .divider {
@@ -123,37 +125,76 @@ body {
   gap: 5px;               /* space between photo cards */
 }
 
-/* Individual photo card */
-.photo-card {
-  background-color: transparent;
-}
-
-/* Removes default figure margin */
-.photo-card figure {
-  margin: 0;
+/* Visible gallery title */ 
+/* Main heading displayed above the gallery */
+.gallery-title {
+  width: 550px;
+  margin: 80 auto 15px auto;
+  text-align: center;
+  font-size: 48px;
 }
 
 /* Ensures images scale correctly within the layout */
+/* Adds a black frame around each image */
+.gallery-intro {
+  width: 550px;
+  margin: 0 auto 30px auto;
+  text-align: center;
+  font-size: 22px;
+  line-height: 1,5;
+}
+
+/* Figure container */
+.photo-card figure {
+  margin: 0;
+  width: 550px;
+  background-color: lightblue;
+  border: 8px solid lightblue;
+}
+
 .photo-card img {
   display: block;
-  width: 550px;
+  width: 100%;
   height: auto;
+  border: 8px solid lightblue;
+}
+
+/* Individual photo card */
+.photo-card {
+  background-color: trasparent;
+  margin-bottom: 0 auto 40px auto;
+  width: 550px;
+  text-align: left;
 }
 
 /* Photo Caption styling */
 /* Text area under each imagen */
 .photo-card figcaption {
   background-color: lightgray;
-  color: lightsky;
-  font-size: 25px;
-  padding: 8px 10px;
+  color: #333;
+  font-size: 22px;
+  padding: 12px;
+  width: 100%;
+  line-height: 1.4;
+}
+
+/* Pricing styling */
+/* Dispays the price of each photograph */
+.photo-price {
+  font-size: 24px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 15px 12px 0 0;
+  vertical-align: middle;
 }
 
 /* Button styling */
 /* Styling for the "Add to basket" button */ 
 .photo-card button {
-  margin-top: 6px;
-  padding: 6px 6px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 12px;
+  padding: 8px 12px;
   font-size: 15px;
   cursor: pointer;
   border: 1px solid #999;
